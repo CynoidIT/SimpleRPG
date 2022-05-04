@@ -2,13 +2,20 @@
 
 //Character generation
 
-class Character{
+class Creature{
     constructor(name, job, level, hp, xp){
         this.name = name
         this.job = job
         this.level = level
         this.hp = hp
         this.xp = xp
+    }
+
+}
+
+class Character extends Creature{
+    constructor(){
+
     }
 }
 
@@ -20,9 +27,10 @@ class Character{
 //room exits 
 
 class Dungeon{
-    constructor (size, type){
+    constructor (size, type, level){
         this.size = size
         this.type = type
+        this.level = level
     }
 }
 
